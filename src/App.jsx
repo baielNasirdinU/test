@@ -25,22 +25,19 @@ fetch(api)
 
 
   },[])
+  console.log(data);
   return (
     <div>
-  <div className="">
-  {
-        data.map((item)=>{
-          <h1 key={item.id}>
-            {item.name}
-            <div className="">
-              {item.name}
-            </div>
-          </h1>
-
-      })
-      }
-  </div>
+ 
 <div className="wrapper">
+  {
+    data.map((item)=>(
+      <div className="">
+    <h2>{ item.name}</h2>
+<img src={item.url} alt={item.name} />
+      </div>
+    ))
+  }
 
 
 </div>
